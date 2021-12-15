@@ -78,7 +78,7 @@ def find_best_k(mnist,n_data=5000,k_min=2,k_max=15,n_splits=10):
             best_i = i
     print(f'Best is n_neighbors = {best_i+2} => score = {best_score}')
 
-def varying_proportion_in_training_set(mnist,n_data=5000,k_min=3,k_max=6,N_SPLITS_LIST = [200,500,1000,2000,5000,10000,20000]):
+def varying_proportion_in_training_set(mnist,n_data=5000,k_min=3,k_max=6,N_SPLITS_LIST = [2,3,4,5,8,10,15,20,50,100,500]):
     
     print(f'K-nn with k between {k_min} et {k_max} on {n_data} images with numbers of kfold splits in {N_SPLITS_LIST}')
 
